@@ -37,13 +37,13 @@
 
     <section class="main-content">
       <div style="text-align: center;">
-        <a target="_blank" href="https://www.facebook.com/groups/kittymod/" title="Facebook official group" data-toggle="tooltip">
+        <a target="_blank" href="https://www.facebook.com/groups/kittymod/" title="Facebook official group" data-toggle="tooltip" onclick="ga('send', 'event', 'Link', 'click', 'fb/kittyMod');">
           <img src="https://cdn1.iconfinder.com/data/icons/social-media-icon-1/112/facebook-64.png">
         </a>
-        <a target="_blank" href="https://vk.com/kittymod" title="VKontakte official group" data-toggle="tooltip">
+        <a target="_blank" href="https://vk.com/kittymod" title="VKontakte official group" data-toggle="tooltip" onclick="ga('send', 'event', 'Link', 'click', 'vk/kittyMod');">
           <img src="https://cdn1.iconfinder.com/data/icons/social-media-icon-1/112/vk-64.png" style="margin-left: 15px;">
         </a>
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MB7NHPBWDUV4G" title="Donate 😽" data-toggle="tooltip">
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MB7NHPBWDUV4G" title="Donate 😽" data-toggle="tooltip"  onclick="ga('send', 'event', 'Link', 'click', 'donate');">
           <img src="http://icausa.org/wp-content/uploads/2015/11/creditcard_icon.png" style="margin-left: 15px;">
         </a>
         <hr>
@@ -84,7 +84,7 @@
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="MB7NHPBWDUV4G">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" onclick="ga('send', 'event', 'Btn', 'click', 'donate');">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
