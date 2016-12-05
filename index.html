@@ -26,15 +26,16 @@
 </script>
   </head>
   <body>
-    <section class="page-header" style="padding-top: 50px; padding-bottom: 70px;">
-      <img height="90" src="https://kindkitty.github.io/OGARio-KITTY-mod/fa-paw-xmas.png" width="90">
-      <h1 class="project-name">Ogario KITTY mod</h1>
-      <h2 class="project-tagline">KITTY mod agario extension</h2>
-      <a target="_blank" href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" class="btn">Install Tampermonkey (chrome)</a>
-      <a target="_blank" href="https://addons.opera.com/en/extensions/details/tampermonkey-beta/" class="btn">Install Tampermonkey (opera)</a>
-      <br/><a href="https://raw.githubusercontent.com/KindKitty/OGARio-KITTY-mod/master/js/OGARio%20-%20KITTY%20mod.user.js" class="btn" style="margin: 0px; max-width: 100%; min-width: 45%;" onclick="ga('send', 'event', 'Btn', 'click', 'install');">Install KITTY mod</a>
-    </section>
-
+    <div id="xmasBackground">
+      <section class="page-header" style="padding-top: 50px; padding-bottom: 70px;">
+        <img height="90" src="https://kindkitty.github.io/OGARio-KITTY-mod/fa-paw-xmas.png" width="90">
+        <h1 class="project-name">Ogario KITTY mod</h1>
+        <h2 class="project-tagline">KITTY mod agario extension</h2>
+        <a target="_blank" href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" class="btn">Install Tampermonkey (chrome)</a>
+        <a target="_blank" href="https://addons.opera.com/en/extensions/details/tampermonkey-beta/" class="btn">Install Tampermonkey (opera)</a>
+        <br/><a href="https://raw.githubusercontent.com/KindKitty/OGARio-KITTY-mod/master/js/OGARio%20-%20KITTY%20mod.user.js" class="btn" style="margin: 0px; max-width: 100%; min-width: 45%;" onclick="ga('send', 'event', 'Btn', 'click', 'install');">Install KITTY mod</a>
+      </section>
+    </div>
     <section class="main-content">
       <div style="text-align: center;">
         <a target="_blank" href="https://www.facebook.com/groups/kittymod/" title="Facebook official group" data-toggle="tooltip" onclick="ga('send', 'event', 'Link', 'click', 'fb/kittymod');" style="color: transparent;">
@@ -127,6 +128,6 @@
   $('[data-toggle="tooltip"]').tooltip({show: null,position: { my: "left top", at: "left bottom"}});
 
     // let it snow
-    $(".page-header").snowfall({round: true, image: "http://loktar00.github.io/JQuery-Snowfall/images/flake.png", minSize: 5, maxSize:10});
+    $("#xmasBackground").snowfall({round: true, image: "http://loktar00.github.io/JQuery-Snowfall/images/flake.png", minSize: 5, maxSize:10});
       
 </script>
