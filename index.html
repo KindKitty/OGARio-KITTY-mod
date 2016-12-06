@@ -53,7 +53,9 @@
       
       <a id="xmasBannerLink" href="xmas-giveaway.html" style="text-decoration: none;">
         <h3>50K Agario coins + 2 rare skins giveaway!</h3>
-        <img id="xmasBannerImg" src="http://image.prntscr.com/image/fdfd1ad09ccc4b889711f14be8293184.png" style="width: 100%;">
+        <div id="xmasBanner" style="position: relative;">
+          <img src="http://image.prntscr.com/image/fdfd1ad09ccc4b889711f14be8293184.png" style="width: 100%;">
+        </div>
       </a>
       <h3>
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h3>
@@ -133,9 +135,9 @@
   $('[data-toggle="tooltip"]').tooltip({show: null,position: { my: "left top", at: "left bottom"}});
   
   $("#xmasBannerLink").mouseenter(function(){
-    $("#xmasBannerImg").snowfall({round: true, image: "https://loktar00.github.io/JQuery-Snowfall/images/flake.png", minSize: 5, maxSize:10});
+    $("#xmasBanner").snowfall({round: true, image: "https://loktar00.github.io/JQuery-Snowfall/images/flake.png", minSize: 5, maxSize:10});
   });
   $("#xmasBannerLink").mouseleave(function(){
-    $("#xmasBannerImg").snowfall('clear');
+    $("#xmasBanner").snowfall('clear');
   });
 </script>
