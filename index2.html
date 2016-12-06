@@ -40,7 +40,7 @@
     margin-top: 20px; position: relative;">
 	
 	<div style="position:absolute;right: 20px;top: 21px;">
-		<a href="#socialBar" class="btn" style="color: lightblue;margin: 0px;max-width: 100%;min-width: 45%;padding-top: 5px;padding-bottom: 5px;border:  0px;">+ info</a>
+		<a id="moreInfo" href="javascript:void(0)" class="btn" style="color: lightblue;margin: 0px;max-width: 100%;min-width: 45%;padding-top: 5px;padding-bottom: 5px;border:  0px;">+ info</a>
 	</div>
   <h2 class="">How to participate?</h2>
 	<div style="
@@ -140,6 +140,13 @@
     // let it snow
     $("#xmasBackground").snowfall({round: true, image: "https://loktar00.github.io/JQuery-Snowfall/images/flake.png", minSize: 5, maxSize:10});
       
+	// smooth scroll
+	$("#moreInfo").click(function(){
+		$('html, body').animate({
+        	scrollTop: $("#socialBar").offset().top
+   		 }, 2000);
+	});
+	
   </script>
       
       <script type="text/javascript">
