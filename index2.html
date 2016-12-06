@@ -194,7 +194,7 @@ var $__container_oc,__scope_oc,pad,periods,update;__scope_oc=window.oc,$__contai
 
 	  <script>
 	  // handle links with @href started with '#' only
-$(document).on('click', 'a[href^="#"]', function(e) {
+$('a[href^="#"]').click(function(e) {
     // target element id
     var id = $(this).attr('href');
     
