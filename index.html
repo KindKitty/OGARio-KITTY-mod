@@ -135,4 +135,7 @@
   $("#xmasBannerLink").mouseenter(function(){
     $("#xmasBannerImg").snowfall({round: true, image: "https://loktar00.github.io/JQuery-Snowfall/images/flake.png", minSize: 5, maxSize:10});
   });
+  $("#xmasBannerLink").mouseleave(function(){
+    $("#xmasBannerImg").snowfall('clear');
+  });
 </script>
