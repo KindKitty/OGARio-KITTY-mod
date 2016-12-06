@@ -13,6 +13,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
     
+    <script src="https://loktar00.github.io/JQuery-Snowfall/snowfall.jquery.min.js"></script>
+    
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -49,6 +51,10 @@
         <hr>
       </div>
       
+      <a id="xmasBanner" href="xmas-giveaway.html" style="text-decoration: none;">
+        <h3>50K Agario coins + 2 rare skins giveaway!</h3>
+        <img id="xmasBannerImg" src="http://image.prntscr.com/image/fdfd1ad09ccc4b889711f14be8293184.png" style="width: 100%;">
+      </a>
       <h3>
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h3>
 
@@ -125,4 +131,8 @@
 
 <script>
   $('[data-toggle="tooltip"]').tooltip({show: null,position: { my: "left top", at: "left bottom"}});
+  
+  $("#xmasBannerLink").mouseenter(function(){
+    $("#xmasBannerImg").snowfall({round: true, image: "https://loktar00.github.io/JQuery-Snowfall/images/flake.png", minSize: 5, maxSize:10});
+  });
 </script>
