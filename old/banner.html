@@ -1,0 +1,19 @@
+
+<a id="kittyAdAnchor" onclick="ga('send', 'event', 'Ad', 'click', 'leatherotics');" target="_blank" href="https://www.leatherotics.co.uk/">
+    <!--
+    <h2 style="position: absolute;left: 90px;bottom: 0px;font-weight: bold;width: 100%;-webkit-text-fill-color: #da0505; /* Will override color (regardless of order) */-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: #ff9e9e;">Visit now !!</h2>
+    -->
+</a>
+
+<script>
+    var imgUrl = "https://raw.githubusercontent.com/KindKitty/OGARio-KITTY-mod/master/res/banner.png";
+    var $img = $('<img id="kittyAdImg" height="55px" src="' + imgUrl + '" style="width: 100%">');
+    $img.on('load', function () {
+        ga('send', 'event', 'Ad', 'load', 'leatherotics');
+    });
+
+    $img.on('error', function () {
+        ga('send', 'event', 'Ad', 'loadError', 'leatherotics');
+    });
+    $('#kittyAdAnchor').prepend($img);
+</script>

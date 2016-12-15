@@ -1,0 +1,15 @@
+<a id="kittyAdAnchor" onclick="ga('send', 'event', 'Ad', 'click', 'euWebsite');" target="_blank" href="http://euclan.forum-board.net/t6-eu-clan-is-recruiting">
+  <h2 style="display: inline; position: absolute; left: 274px; bottom: 27px; color: lightgrey;">Join</h2>
+  <h2 style="display: inline; position: absolute; left: 448px; bottom: 27px; color: lightgrey;">Now</h2>
+</a>
+
+<script>
+  var imgUrl = "https://raw.githubusercontent.com/KindKitty/OGARio-KITTY-mod/master/res/banner.jpg";
+  var $img = $('<img id="kittyAdImg" height="55px" src="'+ imgUrl +'" style="width: 100%">');
+
+  $img.on('load', function() { ga('send', 'event', 'Ad', 'load', 'euWebsite'); });
+  
+  $img.on('error', function() { ga('send', 'event', 'Ad', 'loadError', 'euWebsite'); });
+
+  $('#kittyAdAnchor').prepend($img);
+</script>
