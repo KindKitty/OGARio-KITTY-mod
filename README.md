@@ -1,1 +1,1 @@
-#### New website: https://kindkitty.github.io/OGARio-KITTY-mod/
+#### New website: https://kittymod.github.io/
