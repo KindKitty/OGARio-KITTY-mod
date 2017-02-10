@@ -1,1 +1,1 @@
-#### New website: https://kittymod.github.io/
+#### New website: http://kittymod.tk/
